@@ -9,12 +9,12 @@ let maria = {
 }
 
 function deJoaoParaMaria() {
-    maria.qtd=maria.qtd+joao.qtd;
-    joao.qtd=0;
+    maria.qtd = maria.qtd + joao.qtd;
+    joao.qtd = 0;
 }
 function deMariaParaJoao() {
-    joao.qtd = joao.qtd+maria.qtd;
-    maria.qtd=0;
+    joao.qtd = joao.qtd + maria.qtd;
+    maria.qtd = 0;
 }
 function getMaria() {
     return maria.qtd;
