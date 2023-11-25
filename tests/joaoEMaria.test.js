@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { deJoaoParaMaria, deMariaParaJoao, getMaria, getJoao, setMaria, setJoao } from '../src/joaoEMaria.js';
+import { deJoaoParaMaria, deMariaParaJoao, getMaria, getJoao, setMaria, setJoao } from '../src/main.js';
 
 test('Deve ter uma função deJoaoParaMaria() exportada no módulo', () => {
   expect(deJoaoParaMaria).toBeTypeOf('function');
