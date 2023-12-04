@@ -1,33 +1,11 @@
-let joao = {
-    tipo: "maçã",
-    qtd: 1
-}
+import { deJoaoParaMaria, deMariaParaJoao, getJoao, getMaria } from "./joaoEMaria.js";
 
-let maria = {
-    tipo: "maçã",
-    qtd: 2
-}
+console.log('módulo main');
 
-function deJoaoParaMaria() {
-    maria.qtd = maria.qtd + joao.qtd;
-    joao.qtd = 0;
-}
-function deMariaParaJoao() {
-    joao.qtd = joao.qtd + maria.qtd;
-    maria.qtd = 0;
-}
-function getMaria() {
-    return maria.qtd;
-}
-function getJoao() {
-    return joao.qtd;
-}
-function setMaria(value) {
-    maria.qtd = value;
-}
+console.log('João tem ', getJoao(), ' maçãs!');
+console.log('Maria tem ', getMaria(), ' maçãs!');
 
-function setJoao(value) {
-    joao.qtd = value;
-}
+deJoaoParaMaria();
 
-export { deJoaoParaMaria, deMariaParaJoao, getMaria, getJoao, setMaria, setJoao };
+console.log('João tem ', getJoao(), ' maçãs!');
+console.log('Maria tem ', getMaria(), ' maçãs!');
